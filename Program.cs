@@ -10,6 +10,12 @@ namespace EFInDepth
     {
         static void Main(string[] args)
         {
+            var dbContext = new PlutoDbContext();
+            var courses = dbContext.GetCourses();
+            foreach (var item in courses)
+            {
+                Console.WriteLine(item.Title);
+            }
         }
     }
 }
