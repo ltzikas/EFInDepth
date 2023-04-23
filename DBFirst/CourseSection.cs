@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EFInDepth
+namespace DBFirst
 {
     using System;
     using System.Collections.Generic;

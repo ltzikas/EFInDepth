@@ -7,16 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EFInDepth
+namespace DBFirst
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Post
+    public partial class tblUser
     {
-        public int PostID { get; set; }
-        public System.DateTime DatePublished { get; set; }
-        public string Title { get; set; }
-        public string Body { get; set; }
+        public int UserID { get; set; }
+        public string Username { get; set; }
+        public int Password { get; set; }
     }
 }

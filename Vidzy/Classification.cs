@@ -7,15 +7,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EFInDepth
+namespace Vidzy
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class tblUser
+    public enum Classification : byte
     {
-        public int UserID { get; set; }
-        public string Username { get; set; }
-        public int Password { get; set; }
+        SILVER = 1,
+        GOLD = 2,
+        PLATINUM = 3
     }
 }

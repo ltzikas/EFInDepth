@@ -7,17 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EFInDepth
+namespace DBFirst
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class GetCoursesResult
+    public partial class Post
     {
-        public int CourseID { get; set; }
-        public int AuthorID { get; set; }
+        public int PostID { get; set; }
+        public System.DateTime DatePublished { get; set; }
         public string Title { get; set; }
-        public string Description { get; set; }
-        public short FullPrice { get; set; }
-        public string Level { get; set; }
+        public string Body { get; set; }
     }
 }
