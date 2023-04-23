@@ -7,31 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EFInDepth
+namespace DBFirst
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Course
+    public partial class Tag
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Course()
+        public Tag()
         {
-            this.CourseSections = new HashSet<CourseSection>();
-            this.Tags = new HashSet<Tag>();
+            this.Courses = new HashSet<Course>();
         }
     
-        public int CourseID { get; set; }
-        public int AuthorID { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string Level { get; set; }
-        public short FullPrice { get; set; }
+        public int TagID { get; set; }
+        public string Name { get; set; }
     
-        public virtual Author Author { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CourseSection> CourseSections { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tag> Tags { get; set; }
+        public virtual ICollection<Course> Courses { get; set; }
     }
 }

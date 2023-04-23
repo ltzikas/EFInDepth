@@ -7,23 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EFInDepth
+namespace Vidzy
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Author
+    public partial class Genre
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Author()
+        public Genre()
         {
-            this.Courses = new HashSet<Course>();
+            this.Videos1 = new HashSet<Video>();
         }
     
-        public int AuthorID { get; set; }
+        public byte Id { get; set; }
         public string Name { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Course> Courses { get; set; }
+        public virtual ICollection<Video> Videos1 { get; set; }
     }
 }
